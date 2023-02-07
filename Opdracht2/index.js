@@ -9,7 +9,6 @@ document.getElementById("submit").onclick = function(){
     if(nameArray.length >= 3){
         document.getElementById("names").innerHTML = nameArray;
         document.getElementById("namesReverse").innerHTML = nameArrayReverse.reverse();
-        
     }
     else{
         document.getElementById("names").innerHTML = "Je moet minimaal 3 namen typen";
