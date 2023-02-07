@@ -1,0 +1,17 @@
+body{
+    width: 60%;
+    margin:auto;
+    margin-top: 10%;
+    background-color: aquamarine;
+}
+
+#submit, #add{
+    background-color: chartreuse;
+    border: 0;
+    width: 4em;
+    height: 2em;
+}
+
+#submit{
+    margin-left: 6.3em;
+}
