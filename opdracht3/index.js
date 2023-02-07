@@ -33,7 +33,4 @@ function arrayMultiply(){
     return sum;
 }   
 
-document.write(arraySum());
-document.write(arrayMinus());
-document.write(arrayDivision());
-document.write(arrayMultiply());
+document.getElementById(arraySum).innerHTML = ""
