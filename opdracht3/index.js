@@ -32,5 +32,4 @@ function arrayMultiply(){
     }
     return sum;
 }   
-
-document.getElementById(arraySum).innerHTML = ""
+document.getElementById(arraySumTxt).innerHTML = arraySum();
