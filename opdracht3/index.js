@@ -5,31 +5,35 @@ function arraySum(){
     var sum = []
     for(i = 0; i < arrayEen.length; i++){
         sum.push(arrayEen[i]+arrayTwee[i])
+        document.getElementById(`sumTxt${arrayEen[i]}`).innerHTML = `${arrayEen[i]} + ${arrayTwee[i]} = ${sum[i]}`
     }
-    return sum;
 }   
 
 function arrayMinus(){
-    var sum = []
+    var minus = []
     for(i = 0; i < arrayEen.length; i++){
-        sum.push(arrayTwee[i]-arrayEen[i])
+        minus.push(arrayTwee[i]-arrayEen[i])
+        document.getElementById(`minusTxt${arrayEen[i]}`).innerHTML = `${arrayTwee[i]} - ${arrayEen[i]} = ${minus[i]}`
     }
-    return sum;
 }   
 
 function arrayDivision(){
-    var sum = []
+    var divide = []
     for(i = 0; i < arrayEen.length; i++){
-        sum.push(arrayTwee[i]/arrayEen[i])
-    }
-    return sum;
+        divide.push(arrayTwee[i]/arrayEen[i])
+        document.getElementById(`divideTxt${arrayEen[i]}`).innerHTML = `${arrayTwee[i]} / ${arrayEen[i]} = ${divide[i]}`
+    }   
 }   
 
 function arrayMultiply(){
-    var sum = []
+    var mulitply = []
     for(i = 0; i < arrayEen.length; i++){
-        sum.push(arrayEen[i]*arrayTwee[i])
+        mulitply.push(arrayEen[i]*arrayTwee[i])
+        document.getElementById(`multiplyTxt${arrayEen[i]}`).innerHTML = `${arrayEen[i]} * ${arrayTwee[i]} = ${mulitply[i]}`
     }
-    return sum;
 }   
-document.getElementById(arraySumTxt).innerHTML = arraySum();
+
+arraySum()
+arrayMinus()
+arrayDivision()
+arrayMultiply()
